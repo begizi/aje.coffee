@@ -1,0 +1,16 @@
+<aside class="footer-outer">
+	<div class="footer-inner sidebar">
+		{{#if @labs.subscribers}}
+		<section class="section gh-subscribe">
+			<h4 class="title">Subscribe for Updates</h4>
+		 	{{subscribe_form placeholder="Your email address"}}
+		</section>
+		{{/if}}
+
+		{{! Colophon}}
+		<ul class="socialmedia">
+			<li class="icon-twitter"><a href="{{twitter_url}}">Twitter</a></li>
+			<li class="icon-instagram"><a href="https://www.instagram.com/aje.coffee/">Instagram</a></li>
+		</ul>
+	</div>
+</aside>

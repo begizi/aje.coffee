@@ -1,0 +1,40 @@
+<aside class="overlay menu-overlay">
+	<div class="outer-close toggle-menu">
+		<a class="close">Close</a>
+	</div>
+
+	<nav class="browse-menu">
+		<div class="sidebar grid grid-onethird">
+			{{! Menu }}
+			<div class="grid-item widget widget-navigation">
+				<div class="widget-content">{{navigation}}</div>
+			</div>
+
+			{{! Mini Bio }}
+			<div class="grid-item widget widget-about">
+				<div class="widget-content">
+					<div class="user-profile">
+						<figure class="user-avatar" style="background-image: url({{asset "images/avatar.jpg"}}">&nbsp;</figure>
+						<h4 class="title">Alexandra Juliet Egan</h4>
+						<p class="user-description">Coffee is my passion, Starbucks is my future, and my family and friends are my life. Opinions are my own and do not reflect the opinions of my employer.</p>
+						<a class="user-readmore" href="/about">More About Me</a>
+					</div>
+				</div>
+			</div>
+
+
+
+			{{! Contact Form }}
+			<div class="grid-item widget">
+				<h5 class="title">Subscribe for Updates</h5>
+				<div class="clearfix">
+				  {{#if @labs.subscribers}}
+				  <section class="gh-subscribe">
+				   	{{subscribe_form placeholder="Your email address"}}
+				  </section>
+				  {{/if}}
+				</div>
+			</div>
+		</div>
+	</nav>
+</aside>
