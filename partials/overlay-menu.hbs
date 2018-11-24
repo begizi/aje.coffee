@@ -1,39 +1,39 @@
 <aside class="overlay menu-overlay">
-	<div class="outer-close toggle-menu">
-		<a class="close">Close</a>
-	</div>
+  <div class="outer-close toggle-menu">
+    <a class="close">Close</a>
+  </div>
 
-	<nav class="browse-menu">
-		<div class="sidebar grid grid-onethird">
-			{{! Menu }}
-			<div class="grid-item widget widget-navigation">
-				<div class="widget-content">{{navigation}}</div>
-			</div>
+  <nav class="browse-menu">
+    <div class="sidebar grid grid-onethird">
+      {{! Menu }}
+      <div class="grid-item widget widget-navigation">
+        <div class="widget-content">{{navigation}}</div>
+      </div>
 
-			{{! Mini Bio }}
-			<div class="grid-item widget widget-about">
-				<div class="widget-content">
-					<div class="user-profile">
-						<figure class="user-avatar" style="background-image: url({{asset "images/avatar.jpg"}}">&nbsp;</figure>
-						<h4 class="title">Alexandra Juliet Egan</h4>
-						<p class="user-description">I'm just a girl who fell in love with coffee and now I write about it. Opinions are my own and do not reflect the opinions of my employer.</p>
-						<a class="user-readmore" href="/about">More About Me</a>
-					</div>
-				</div>
-			</div>
+      {{! Mini Bio }}
+      <div class="grid-item widget widget-about">
+        <div class="widget-content">
+          <div class="user-profile">
+            <figure class="user-avatar" style="background-image: url('https://egan.sfo2.cdn.digitaloceanspaces.com/alex/avatar.jpg')">&nbsp;</figure>
+            <h4 class="title">Alexandra Juliet Egan</h4>
+            <p class="user-description">I am a barista and coffee roaster in the Bay Area who loves to learn and write about coffee for other inquisitive and dedicated coffee professionals. Opinions are my own and do not reflect the opinions of my employer.</p>
+            <a class="user-readmore" href="/about">More About Me</a>
+          </div>
+        </div>
+      </div>
 
 
-			{{! Contact Form }}
-			<div class="grid-item widget">
-				<h5 class="title">Subscribe for Updates</h5>
-				<div class="clearfix">
-				  {{#if @labs.subscribers}}
-				  <section class="gh-subscribe">
-				   	{{subscribe_form placeholder="Your email address"}}
-				  </section>
-				  {{/if}}
-				</div>
-			</div>
-		</div>
-	</nav>
+      {{! Contact Form }}
+      <div class="grid-item widget">
+        <h5 class="title">Subscribe for Updates</h5>
+        <div class="clearfix">
+          {{#if @labs.subscribers}}
+          <section class="gh-subscribe">
+            {{subscribe_form placeholder="Your email address"}}
+          </section>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  </nav>
 </aside>
